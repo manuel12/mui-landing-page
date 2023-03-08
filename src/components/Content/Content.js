@@ -18,7 +18,7 @@ const Content = () => {
       <Box className="content">
         <Box className="left-content">
           <Container>
-            <Zoom in={true} timeout={1000}>
+            <Zoom in={true} timeout={2000}>
               <Box className="text-container">
                 <Typography variant="h5" align="center" gutterBottom>
                   Welcome to
@@ -37,14 +37,14 @@ const Content = () => {
               </Box>
             </Zoom>
 
-            <Slide direction="right" in={true} timeout={1000}>
+            <Slide direction="right" in={true} timeout={1100}>
               <Box className="action-buttons-container">
                 <Button className="action-button">reservation</Button>
                 <Button className="action-button">view menu</Button>
               </Box>
             </Slide>
 
-            <Slide direction="left" in={true} timeout={1000}>
+            <Slide direction="left" in={true} timeout={1100}>
               <Box className="social-buttons-container">
                 <Button className="social-button">
                   <FacebookIcon className="social-icon" />
@@ -61,7 +61,7 @@ const Content = () => {
         </Box>
         <Box className="right-content">
           <Container>
-            <Zoom in={true} timeout={1500}>
+            <Zoom in={true} timeout={1400}>
               <Box className="image-container"></Box>
             </Zoom>
           </Container>
