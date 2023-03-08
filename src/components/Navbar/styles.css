@@ -1,0 +1,25 @@
+.navbar,
+.toolbar {
+  background-color: white !important;
+  height: 150px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-button {
+  background-color: white !important;
+  border-radius: 0 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+
+  border-bottom: var(--border-width) solid var(--main-color) !important;
+  width: 270px;
+  height: 100px;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: var(--font-color) !important;
+}
