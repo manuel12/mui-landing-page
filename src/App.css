@@ -1,3 +1,9 @@
+:root {
+  --font-color: #333333;
+  --main-color: #ff5738;
+  --border-width: 3px;
+}
+
 .App {
   text-align: center;
 }
