@@ -1,24 +1,25 @@
 .content {
   position: relative;
-  top: 150px;
-  display: flex;
+  top: 100px;
+  padding-bottom: 100px;
 }
 
 .left-content,
 .right-content {
-  height: 1000px;
+  max-height: 900px;
 }
 
 .left-content {
-  width: 48%;
+  padding-top: 100px !important;
 }
 
 .right-content {
-  width: 52%;
+  padding-top: 100px !important;
 }
 
 .text-container {
-  margin: 25% auto;
+  margin: 0 auto 100px !important;
+  max-width: 500px;
 }
 
 .text-location {
@@ -26,15 +27,16 @@
 }
 
 .action-buttons-container {
-  display: flex;
-  justify-content: space-evenly;
   margin-bottom: 100px;
 }
 
 .action-button {
   border: var(--border-width) solid var(--main-color) !important;
   border-radius: 50px !important;
-  width: 270px;
+  margin: 0 auto !important;
+  margin-bottom: 50px !important;
+  display: block !important;
+  width: 100%;
   height: 100px;
 
   font-size: 24px !important;
@@ -46,7 +48,7 @@
   margin: 0 auto;
   width: 75%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .social-button {
@@ -66,7 +68,76 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  margin: 25% auto;
-  width: 714px;
-  height: 700px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+}
+
+@media screen and (min-width: 600px) {
+  .action-button {
+    max-width: 500px;
+  }
+  .social-buttons-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text-container {
+    max-width: 720px;
+  }
+
+  .action-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+
+  .action-button {
+    display: inline !important;
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    display: flex;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .right-content {
+    width: 50%;
+  }
+
+  .text-container {
+    margin-bottom: 0 auto 50px !important;
+  }
+
+  .action-buttons-container {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .action-buttons-container {
+    display: flex;
+  }
+
+  .action-button {
+    max-width: 240px;
+  }
+
+  .image-container {
+    max-height: 700px !important;
+  }
 }
