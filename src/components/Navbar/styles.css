@@ -1,12 +1,19 @@
 .navbar,
 .toolbar {
   background-color: white !important;
-  height: 150px;
+  height: 100px;
 }
 
-.toolbar {
+.navbar-buttons-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.hamburger-button {
+  color: var(--main-color);
+  font-size: 60px !important;
 }
 
 .navbar-button {
@@ -17,9 +24,30 @@
   border-right: none !important;
 
   border-bottom: var(--border-width) solid var(--main-color) !important;
-  width: 270px;
-  height: 100px;
+  width: 150px;
+  height: 70px;
   font-size: 24px !important;
   font-weight: bold !important;
   color: var(--font-color) !important;
 }
+
+.navbar-menu-item {
+  text-transform: capitalize;
+}
+
+/* @media screen and (min-width: 768px) {
+
+} */
+
+@media screen and (min-width: 992px) {
+  .navbar-button {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-button {
+    width: 250px;
+  }
+}
+
