@@ -1,12 +1,26 @@
-.content {
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-content-background {
+  background-color: #ffffff;
+  min-height: 120vh;
+  padding-bottom: 100px;
+}
+
+.home-content {
   position: relative;
   top: 100px;
-  padding-bottom: 100px;
 }
 
 .left-content,
 .right-content {
   max-height: 900px;
+  color: inherit !important;
 }
 
 .left-content {
@@ -44,6 +58,11 @@
   color: var(--font-color) !important;
 }
 
+.action-button:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+
 .social-buttons-container {
   margin: 0 auto;
   width: 75%;
@@ -56,11 +75,17 @@
   border-radius: 25px !important;
   width: 80px;
   height: 80px;
+  color: var(--main-color) !important;
+}
+
+.social-button:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
 }
 
 .social-icon {
   font-size: 2rem !important;
-  color: var(--main-color);
+  color: inherit;
 }
 
 .image-container {
