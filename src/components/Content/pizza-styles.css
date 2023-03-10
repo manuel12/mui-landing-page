@@ -1,0 +1,37 @@
+.pizza-content-background {
+  background-color: #333333;
+}
+
+.pizza-content {
+  min-height: 120vh;
+  color: white;
+  padding-top: 100px;
+}
+
+.pizza-content .text-container {
+  max-width: 500px;
+}
+
+.pizza-image-container {
+  background-image: url("https://g.foolcdn.com/editorial/images/722103/dpz-dominos-stock-dividend.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .pizza-content .text-container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pizza-content .text-container {
+    position: relative;
+    top: 20vh;
+    padding-left: 100px;
+  }
+}
