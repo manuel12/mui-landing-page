@@ -55,15 +55,17 @@ const Navbar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  className="navbar-menu-item"
-                >
-                  <Typography textAlign="center" variant="h4">
-                    {page}
-                  </Typography>
-                </MenuItem>
+                <a href={`#${page}`}>
+                  <MenuItem
+                    key={page}
+                    onClick={handleCloseNavMenu}
+                    className="navbar-menu-item"
+                  >
+                    <Typography textAlign="center" variant="h4">
+                      {page}
+                    </Typography>
+                  </MenuItem>
+                </a>
               ))}
             </Menu>
           </Box>
@@ -78,9 +80,11 @@ const Navbar = () => {
           >
             {pages.map((page) => {
               return (
-                <Button className="navbar-button" variant="outlined">
-                  {page}
-                </Button>
+                <a href={`#${page}`}>
+                  <Button className="navbar-button" variant="outlined">
+                    {page}
+                  </Button>
+                </a>
               );
             })}
           </Box>
