@@ -11,9 +11,9 @@ import "./styles.css";
 const Content = () => {
   return (
     <>
-      <Box className="home-content-background">
+      <Box className="home-content-background" id="home">
         <Container maxWidth="xl">
-          <Box className="content home-content" id="home">
+          <Box className="content home-content">
             <Box className="left-content">
               <Container>
                 <Zoom in={true} timeout={2000}>
