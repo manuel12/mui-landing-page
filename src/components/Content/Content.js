@@ -16,14 +16,18 @@ const Content = () => {
           <Box className="content home-content">
             <Box className="left-content">
               <Container>
-                <Zoom in={true} timeout={2000}>
-                  <Box className="text-container">
+                <Box className="text-container">
+                  <Zoom in={true} timeout={2000}>
                     <Typography variant="h5" align="center" gutterBottom>
                       Welcome to
                     </Typography>
+                  </Zoom>
+                  <Zoom in={true} timeout={2000}>
                     <Typography variant="h1" align="center" gutterBottom>
                       Mario's Pizzeria
                     </Typography>
+                  </Zoom>
+                  <Zoom in={true} timeout={2000}>
                     <Typography
                       className="text-location"
                       variant="h4"
@@ -32,8 +36,8 @@ const Content = () => {
                     >
                       ​254 W 27ST ST, NEW YORK, NY 10011
                     </Typography>
-                  </Box>
-                </Zoom>
+                  </Zoom>
+                </Box>
 
                 <Slide direction="right" in={true} timeout={1100}>
                   <Box className="action-buttons-container">
