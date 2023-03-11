@@ -8,15 +8,15 @@ const PizzaContent = () => {
   return (
     <Box className="pizza-content-background">
       <Container maxWidth="xl">
-        <Box className="content pizza-content" id="pizza">
+        <Box className="content pizza-content">
           <Box className="left-content">
             <Zoom in={true} timeout={1400}>
               <Box className="image-container pizza-image-container"></Box>
             </Zoom>
           </Box>
-          <Box className="right-content">
+          <Box className="right-content" id="pizza">
             <Slide direction="left" in={true} timeout={1100}>
-              <Box className="text-container">
+              <Box className="text-container" >
                 <Typography variant="h3" align="center" gutterBottom>
                   The best pizza in town
                 </Typography>
