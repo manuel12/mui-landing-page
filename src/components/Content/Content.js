@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Container } from "@mui/system";
 import { Button, Typography, Slide, Zoom } from "@mui/material";
 
@@ -9,6 +9,51 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import "./styles.css";
 
 const Content = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry.target.id);
+      if (entry.isIntersecting) {
+        console.log(`${entry.target.id} Intersecting!`);
+
+        handleElementVisible(entry.target.id, true);
+      } else {
+        console.log(`${entry.target.id} NOT Intersecting!`);
+
+        handleElementVisible(entry.target.id, false);
+      }
+    });
+  });
+
+  const handleElementVisible = (elementId, value) => {
+    console.log(value);
+    animationFuncs[elementId](value);
+  };
+
+  const [nameAnimation, setNameAnimation] = useState(false);
+  const [locationAnimation, setLocationAnimation] = useState(false);
+  const [welcomeAnimation, setWelcomeAnimation] = useState(false);
+
+  const [actionButtonsAnimation, setActionButtonsAnimation] = useState(false);
+  const [socialButtonsAnimation, setSocialButtonsAnimation] = useState(false);
+
+  const [imageAnimation, setImageAnimation] = useState(false);
+
+  const animationFuncs = {
+    name: setNameAnimation,
+    location: setLocationAnimation,
+    welcome: setWelcomeAnimation,
+    action: setActionButtonsAnimation,
+    social: setSocialButtonsAnimation,
+    image: setImageAnimation,
+  };
+
+  useEffect(() => {
+    const typographyElements = document.querySelectorAll(".animation-element");
+    console.log(typographyElements);
+
+    typographyElements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <>
       <Box className="home-content-background" id="home">
@@ -17,19 +62,33 @@ const Content = () => {
             <Box className="left-content">
               <Container>
                 <Box className="text-container">
-                  <Zoom in={true} timeout={2000}>
-                    <Typography variant="h5" align="center" gutterBottom>
+                  <Zoom in={welcomeAnimation} timeout={2000}>
+                    <Typography
+                      variant="h5"
+                      align="center"
+                      id="welcome"
+                      className="animation-element"
+                      gutterBottom
+                    >
                       Welcome to
                     </Typography>
                   </Zoom>
-                  <Zoom in={true} timeout={2000}>
-                    <Typography variant="h1" align="center" gutterBottom>
+
+                  <Zoom in={nameAnimation} timeout={2000}>
+                    <Typography
+                      variant="h1"
+                      align="center"
+                      id="name"
+                      className="animation-element"
+                      gutterBottom
+                    >
                       Mario's Pizzeria
                     </Typography>
                   </Zoom>
-                  <Zoom in={true} timeout={2000}>
+                  <Zoom in={locationAnimation} timeout={2000}>
                     <Typography
-                      className="text-location"
+                      id="location"
+                      className="text-location animation-element"
                       variant="h4"
                       align="center"
                       gutterBottom
@@ -39,15 +98,29 @@ const Content = () => {
                   </Zoom>
                 </Box>
 
-                <Slide direction="right" in={true} timeout={1100}>
-                  <Box className="action-buttons-container">
+                <Slide
+                  direction="right"
+                  in={actionButtonsAnimation}
+                  timeout={1100}
+                >
+                  <Box
+                    className="action-buttons-container animation-element"
+                    id="action"
+                  >
                     <Button className="action-button">reservation</Button>
                     <Button className="action-button">view menu</Button>
                   </Box>
                 </Slide>
 
-                <Slide direction="left" in={true} timeout={1100}>
-                  <Box className="social-buttons-container">
+                <Slide
+                  direction="right"
+                  in={socialButtonsAnimation}
+                  timeout={1100}
+                >
+                  <Box
+                    className="social-buttons-container animation-element"
+                    id="social"
+                  >
                     <Button className="social-button">
                       <FacebookIcon className="social-icon" />
                     </Button>
@@ -63,8 +136,11 @@ const Content = () => {
             </Box>
             <Box className="right-content">
               <Container>
-                <Zoom in={true} timeout={1400}>
-                  <Box className="image-container"></Box>
+                <Zoom in={imageAnimation} timeout={1400}>
+                  <Box
+                    className="image-container animation-element"
+                    id="image"
+                  ></Box>
                 </Zoom>
               </Container>
             </Box>
