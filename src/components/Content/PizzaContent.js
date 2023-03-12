@@ -39,15 +39,15 @@ const PizzaContent = () => {
       <Container maxWidth="xl">
         <Box className="content pizza-content">
           <Box className="left-content">
-            <Zoom in={pizzaImageAnimation} timeout={1400}>
+            <Slide direction="right" in={pizzaImageAnimation} timeout={1400}>
               <Box
                 id="pizza-image"
                 className="image-container pizza-image-container pizza-animation-element"
               ></Box>
-            </Zoom>
+            </Slide>
           </Box>
           <Box className="right-content" id="pizza">
-            <Slide direction="down" in={textAnimation} timeout={1100}>
+            <Zoom in={textAnimation} timeout={1600}>
               <Box id="text" className="text-container pizza-animation-element">
                 <Typography variant="h3" align="center" gutterBottom>
                   The best pizza in town
@@ -60,7 +60,7 @@ const PizzaContent = () => {
                   alias.
                 </Typography>
               </Box>
-            </Slide>
+            </Zoom>
           </Box>
         </Box>
       </Container>
