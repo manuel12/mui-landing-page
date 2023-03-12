@@ -1,25 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Box, Container } from "@mui/system";
 import { Slide, Typography, Zoom } from "@mui/material";
+
+import { createObserver, observeElements } from "../../utils";
 import "./styles.css";
 import "./pizza-styles.css";
 
 const PizzaContent = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        handleElementVisible(entry.target.id, true);
-      } else {
-        handleElementVisible(entry.target.id, false);
-      }
-    });
-  });
-
-  const handleElementVisible = (elementId, value) => {
-    console.log(elementId, value);
-    animationFuncs[elementId](value);
-  };
-
   const [pizzaImageAnimation, setPizzaImageAnimation] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);
 
@@ -28,10 +15,10 @@ const PizzaContent = () => {
     text: setTextAnimation,
   };
 
+  const observer = createObserver(animationFuncs);
+
   useEffect(() => {
-    const animationElements = document.querySelectorAll(".pizza-animation-element");
-    console.log(animationElements);
-    animationElements.forEach((el) => observer.observe(el));
+    observeElements(".pizza-animation-element", observer);
   }, []);
 
   return (
