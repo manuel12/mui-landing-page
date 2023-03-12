@@ -1,22 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Container } from "@mui/system";
 import { Slide, Typography, Zoom } from "@mui/material";
 import "./styles.css";
 import "./pizza-styles.css";
 
 const PizzaContent = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        handleElementVisible(entry.target.id, true);
+      } else {
+        handleElementVisible(entry.target.id, false);
+      }
+    });
+  });
+
+  const handleElementVisible = (elementId, value) => {
+    console.log(elementId, value);
+    animationFuncs[elementId](value);
+  };
+
+  const [pizzaImageAnimation, setPizzaImageAnimation] = useState(false);
+  const [textAnimation, setTextAnimation] = useState(false);
+
+  const animationFuncs = {
+    "pizza-image": setPizzaImageAnimation,
+    text: setTextAnimation,
+  };
+
+  useEffect(() => {
+    const animationElements = document.querySelectorAll(".pizza-animation-element");
+    console.log(animationElements);
+    animationElements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <Box className="pizza-content-background">
       <Container maxWidth="xl">
         <Box className="content pizza-content">
           <Box className="left-content">
-            <Zoom in={true} timeout={1400}>
-              <Box className="image-container pizza-image-container"></Box>
+            <Zoom in={pizzaImageAnimation} timeout={1400}>
+              <Box
+                id="pizza-image"
+                className="image-container pizza-image-container pizza-animation-element"
+              ></Box>
             </Zoom>
           </Box>
           <Box className="right-content" id="pizza">
-            <Slide direction="left" in={true} timeout={1100}>
-              <Box className="text-container" >
+            <Slide direction="down" in={textAnimation} timeout={1100}>
+              <Box id="text" className="text-container pizza-animation-element">
                 <Typography variant="h3" align="center" gutterBottom>
                   The best pizza in town
                 </Typography>
