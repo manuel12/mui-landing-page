@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Container } from "@mui/system";
-import { Slide, Typography, Zoom } from "@mui/material";
+import { Typography, Zoom } from "@mui/material";
 
 import { createObserver, observeElements } from "../../utils";
 import "./styles.css";
@@ -26,15 +26,15 @@ const PizzaContent = () => {
       <Container maxWidth="xl">
         <Box className="content pizza-content">
           <Box className="left-content">
-            <Slide direction="right" in={pizzaImageAnimation} timeout={1400}>
+            <Zoom in={pizzaImageAnimation} timeout={1400}>
               <Box
                 id="pizza-image"
                 className="image-container pizza-image-container pizza-animation-element"
               ></Box>
-            </Slide>
+            </Zoom>
           </Box>
           <Box className="right-content" id="pizza">
-            <Zoom in={textAnimation} timeout={1600}>
+            <Zoom in={textAnimation} timeout={2000}>
               <Box id="text" className="text-container pizza-animation-element">
                 <Typography variant="h3" align="center" gutterBottom>
                   The best pizza in town
