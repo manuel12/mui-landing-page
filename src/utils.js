@@ -1,11 +1,11 @@
 export const createObserver = (animationFuncs) => {
   return new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        handleElementVisible(animationFuncs, entry.target.id, true);
-      } else {
-        handleElementVisible(animationFuncs, entry.target.id, false);
-      }
+      handleElementVisible(
+        animationFuncs,
+        entry.target.id,
+        entry.isIntersecting
+      );
     });
   });
 };
