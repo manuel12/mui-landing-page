@@ -15,7 +15,6 @@ a {
   width: 100%;
 }
 
-
 .hamburger-button {
   color: var(--main-color);
   font-size: 60px !important;
@@ -55,4 +54,3 @@ a {
     width: 180px;
   }
 }
-
