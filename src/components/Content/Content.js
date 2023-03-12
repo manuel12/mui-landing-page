@@ -11,21 +11,16 @@ import "./styles.css";
 const Content = () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      console.log(entry.target.id);
       if (entry.isIntersecting) {
-        console.log(`${entry.target.id} Intersecting!`);
-
         handleElementVisible(entry.target.id, true);
       } else {
-        console.log(`${entry.target.id} NOT Intersecting!`);
-
         handleElementVisible(entry.target.id, false);
       }
     });
   });
 
   const handleElementVisible = (elementId, value) => {
-    console.log(value);
+    console.log(elementId, value);
     animationFuncs[elementId](value);
   };
 
@@ -44,14 +39,13 @@ const Content = () => {
     welcome: setWelcomeAnimation,
     action: setActionButtonsAnimation,
     social: setSocialButtonsAnimation,
-    image: setImageAnimation,
+    "home-image": setImageAnimation,
   };
 
   useEffect(() => {
-    const typographyElements = document.querySelectorAll(".animation-element");
-    console.log(typographyElements);
-
-    typographyElements.forEach((el) => observer.observe(el));
+    const animationElements = document.querySelectorAll(".animation-element");
+    console.log(animationElements);
+    animationElements.forEach((el) => observer.observe(el));
   }, []);
 
   return (
@@ -139,7 +133,7 @@ const Content = () => {
                 <Zoom in={imageAnimation} timeout={1400}>
                   <Box
                     className="image-container animation-element"
-                    id="image"
+                    id="home-image"
                   ></Box>
                 </Zoom>
               </Container>
