@@ -4,6 +4,7 @@ import Content from "./components/Content/Content";
 import PizzaContent from "./components/Content/PizzaContent";
 import PastaContent from "./components/Content/PastaContent";
 import About from "./components/Content/About";
+import Location from "./components/Content/Location";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <PizzaContent />
       <PastaContent />
       <About />
+      <Location />
     </div>
   );
 }
