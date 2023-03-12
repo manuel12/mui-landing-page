@@ -6,24 +6,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
+import { createObserver, observeElements } from "../../utils";
 import "./styles.css";
 
 const Content = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        handleElementVisible(entry.target.id, true);
-      } else {
-        handleElementVisible(entry.target.id, false);
-      }
-    });
-  });
-
-  const handleElementVisible = (elementId, value) => {
-    console.log(elementId, value);
-    animationFuncs[elementId](value);
-  };
-
   const [nameAnimation, setNameAnimation] = useState(false);
   const [locationAnimation, setLocationAnimation] = useState(false);
   const [welcomeAnimation, setWelcomeAnimation] = useState(false);
@@ -42,10 +28,10 @@ const Content = () => {
     "home-image": setImageAnimation,
   };
 
+  const observer = createObserver(animationFuncs);
+
   useEffect(() => {
-    const animationElements = document.querySelectorAll(".animation-element");
-    console.log(animationElements);
-    animationElements.forEach((el) => observer.observe(el));
+    observeElements(".animation-element", observer);
   }, []);
 
   return (
