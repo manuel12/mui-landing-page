@@ -21,7 +21,7 @@ const Content = () => {
 
   const animationFuncs = {
     name: setNameAnimation,
-    location: setLocationAnimation,
+    "location-text": setLocationAnimation,
     welcome: setWelcomeAnimation,
     action: setActionButtonsAnimation,
     social: setSocialButtonsAnimation,
@@ -67,7 +67,7 @@ const Content = () => {
                   </Zoom>
                   <Zoom in={locationAnimation} timeout={2000}>
                     <Typography
-                      id="location"
+                      id="location-text"
                       className="text-location animation-element"
                       variant="h4"
                       align="center"
