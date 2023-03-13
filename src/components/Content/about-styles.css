@@ -1,16 +1,31 @@
 .about-content-background {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsansonemarketgardencity.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fshutterstock_355605911-e1572523962108.jpg&f=1&nofb=1&ipt=e2af11b4e297ec5aa772dd7967cd5ad22bcefc8dbd8fcbccf771d95c3b549644&ipo=images");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #333333;
   padding-top: 100px;
   padding-bottom: 100px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: white;
 }
 
-.about-content {
-  position: relative;
-  top: 25vh;
-  max-width: 1080px;
+.about-image-container {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsansonemarketgardencity.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fshutterstock_355605911-e1572523962108.jpg&f=1&nofb=1&ipt=e2af11b4e297ec5aa772dd7967cd5ad22bcefc8dbd8fcbccf771d95c3b549644&ipo=images");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
   margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content .text-container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-content .text-container {
+    position: relative;
+    top: 20vh;
+    padding-left: 100px;
+  }
 }
