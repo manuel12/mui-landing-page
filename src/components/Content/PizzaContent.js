@@ -36,15 +36,28 @@ const PizzaContent = () => {
           <Box className="right-content" id="pizza">
             <Zoom in={textAnimation} timeout={2000}>
               <Box id="text" className="text-container pizza-animation-element">
-                <Typography variant="h3" align="center" gutterBottom>
+                <Typography variant="h3" align="left" gutterBottom>
                   The best pizza in town
                 </Typography>
-                <Typography variant="h5" align="center" gutterBottom>
-                  Voluptatem sint perferendis quas eveniet. Saepe maiores sequi
-                  ipsam similique iusto iste est. Unde tempora voluptatem
-                  laborum assumenda alias nisi. Repellat laborum accusantium
-                  dolore dolor laboriosam. Quod recusandae dolorem quasi fuga
-                  alias.
+                <Typography variant="h5" align="left" gutterBottom>
+                  Looking for the best pizza in town? Look no further than our
+                  pizzeria.
+                  <br />
+                  <br />
+                  Our expert chefs use only the freshest and highest-quality
+                  ingredients to make our pizzas, ensuring that every slice is
+                  bursting with flavor.
+                  <br />
+                  <br />
+                  Whether you dine in or order takeout, you can always count on
+                  our pizza to be hot, fresh, and absolutely delicious. Our
+                  passion for pizza shines through in every bite, and we're
+                  confident that once you try our pizza, you won't want to go
+                  anywhere else.
+                  <br />
+                  <br />
+                  Come in and taste the difference for yourself. Our pizza truly
+                  is the best in town.
                 </Typography>
               </Box>
             </Zoom>
