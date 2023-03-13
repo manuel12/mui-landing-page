@@ -13,7 +13,6 @@ a {
 }
 
 .home-content {
-
 }
 
 .left-content,
@@ -27,13 +26,15 @@ a {
 }
 
 .right-content {
-
 }
-
 
 .text-container {
   margin: 0 auto !important;
   max-width: 500px;
+}
+
+.home-content .text-container {
+  margin-bottom: 100px !important;
 }
 
 .text-location {
@@ -109,7 +110,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .home-content-background {
-    min-height: 1450px;
   }
 
   .text-container {
@@ -132,7 +132,6 @@ a {
 
 @media screen and (min-width: 992px) {
   .home-content-background {
-    min-height: 1200px;
   }
 
   .content {
@@ -164,7 +163,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .home-content-background {
-    min-height: 1000px;
   }
 
   .action-buttons-container {
