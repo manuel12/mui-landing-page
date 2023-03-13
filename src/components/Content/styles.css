@@ -8,13 +8,12 @@ a {
 
 .home-content-background {
   background-color: #ffffff;
-  min-height: 1700px;
+  padding-top: 200px;
   padding-bottom: 100px;
 }
 
 .home-content {
-  position: relative;
-  top: 100px;
+
 }
 
 .left-content,
@@ -24,15 +23,16 @@ a {
 }
 
 .left-content {
-  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 
 .right-content {
-  padding-top: 100px !important;
+
 }
 
+
 .text-container {
-  margin: 0 auto 100px !important;
+  margin: 0 auto !important;
   max-width: 500px;
 }
 
@@ -93,7 +93,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   width: 100%;
   min-height: 400px;
 }
@@ -141,6 +141,7 @@ a {
 
   .left-content {
     width: 50%;
+    padding-bottom: 0 !important;
   }
 
   .right-content {
