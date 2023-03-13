@@ -22,10 +22,10 @@ const PastaContent = () => {
   }, []);
 
   return (
-    <Box className="pasta-content-background">
+    <Box className="pasta-content-background" id="pasta">
       <Container maxWidth="xl">
         <Box className="content pasta-content">
-          <Box className="left-content" id="pasta">
+          <Box className="left-content">
             <Zoom in={textAnimation} timeout={2000}>
               <Box id="text" className="text-container pasta-animation-element">
                 <Typography variant="h3" align="left" gutterBottom>
