@@ -7,9 +7,11 @@ import "./styles.css";
 import "./about-styles.css";
 
 const About = () => {
+  const [aboutImageAnimation, setAboutImageAnimation] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);
 
   const animationFuncs = {
+    "about-image": setAboutImageAnimation,
     text: setTextAnimation,
   };
 
@@ -23,19 +25,42 @@ const About = () => {
     <>
       <Box className="about-content-background" id="about">
         <Container maxWidth="xl">
-          <Zoom in={textAnimation} timeout={2000}>
-            <Box id="text" className="about-content about-animation-element">
-              <Typography variant="h3" align="center" gutterBottom>
-                Our Story
-              </Typography>
-              <Typography variant="h5" align="center" gutterBottom>
-                Voluptatem sint perferendis quas eveniet. Saepe maiores sequi
-                ipsam similique iusto iste est. Unde tempora voluptatem laborum
-                assumenda alias nisi. Repellat laborum accusantium dolore dolor
-                laboriosam. Quod recusandae dolorem quasi fuga alias.
-              </Typography>
+          <Box className="content about-content">
+            <Box className="left-content">
+              <Zoom in={aboutImageAnimation} timeout={1400}>
+                <Box
+                  id="about-image"
+                  className="image-container about-image-container about-animation-element"
+                ></Box>
+              </Zoom>
             </Box>
-          </Zoom>
+            <Box className="right-content">
+              <Zoom in={textAnimation} timeout={2000}>
+                <Box id="text" className="text-container about-animation-element">
+                  <Typography variant="h3" align="left" gutterBottom>
+                    Our Story
+                  </Typography>
+                  <Typography variant="h5" align="left" gutterBottom>
+                    Our famous Italian pizzeria started from humble beginnings
+                    in a small town in Italy. <br />
+                    <br />
+                    With a passion for pizza and a dedication to using only the
+                    finest ingredients, we quickly gained a loyal following.
+                    Word spread about our delicious pizzas, and before long, we
+                    were the talk of the town. As our reputation grew, we
+                    expanded to new locations and perfected our craft, always
+                    staying true to our roots.
+                    <br />
+                    <br />
+                    Today, we are known around the world for our authentic
+                    Italian pizzas and commitment to quality. Our story is one
+                    of passion, hard work, and a love for great pizza that
+                    continues to this day.
+                  </Typography>
+                </Box>
+              </Zoom>
+            </Box>
+          </Box>
         </Container>
       </Box>
     </>
