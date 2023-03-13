@@ -4,21 +4,26 @@
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: white;
 }
 
 .location-content {
-  position: relative;
-  top: 20vh;
   max-width: 1080px;
   margin: 0 auto;
 }
 
 .map {
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   width: 100%;
   max-width: 800px;
   height: 600px;
+}
+
+@media screen and (min-width: 992px) {
+  .location-content {
+    position: relative;
+    top: 20vh;
+  }
 }
