@@ -22,7 +22,7 @@ const PizzaContent = () => {
   }, []);
 
   return (
-    <Box className="pizza-content-background">
+    <Box className="pizza-content-background" id="pizza">
       <Container maxWidth="xl">
         <Box className="content pizza-content">
           <Box className="left-content">
@@ -33,7 +33,7 @@ const PizzaContent = () => {
               ></Box>
             </Zoom>
           </Box>
-          <Box className="right-content" id="pizza">
+          <Box className="right-content">
             <Zoom in={textAnimation} timeout={2000}>
               <Box id="text" className="text-container pizza-animation-element">
                 <Typography variant="h3" align="left" gutterBottom>
