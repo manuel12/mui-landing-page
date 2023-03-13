@@ -45,7 +45,7 @@ const Content = () => {
                   <Zoom in={welcomeAnimation} timeout={2000}>
                     <Typography
                       variant="h5"
-                      align="center"
+                      align="left"
                       id="welcome"
                       className="animation-element"
                       gutterBottom
@@ -57,7 +57,7 @@ const Content = () => {
                   <Zoom in={nameAnimation} timeout={2000}>
                     <Typography
                       variant="h1"
-                      align="center"
+                      align="left"
                       id="name"
                       className="animation-element"
                       gutterBottom
@@ -70,7 +70,7 @@ const Content = () => {
                       id="location-text"
                       className="text-location animation-element"
                       variant="h4"
-                      align="center"
+                      align="left"
                       gutterBottom
                     >
                       ​254 W 27ST ST, NEW YORK, NY 10011
