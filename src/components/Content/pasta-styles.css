@@ -5,12 +5,11 @@
 }
 
 .pasta-right-content {
-  padding-top: 0 !important;
+  /* padding-bottom: 100px !important; */
 }
 
 .pasta-content .text-container {
   max-width: 500px;
-
 }
 
 .pasta-image-container {
