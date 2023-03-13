@@ -22,8 +22,8 @@ const Location = () => {
   }, []);
 
   return (
-    <Box className="location-content-background">
-      <Container maxWidth="xl" id="location">
+    <Box className="location-content-background" id="location">
+      <Container maxWidth="xl">
         <Box
           id="text"
           className="content location-content location-animation-element"
