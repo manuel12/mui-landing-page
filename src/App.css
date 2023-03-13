@@ -1,6 +1,7 @@
 :root {
   --font-color: #333333;
-  --main-color: #ff5738;
+  --main-color: #ff5638;
+  --main-color-opacity: #333333d8;
   --border-width: 2px;
 }
 
