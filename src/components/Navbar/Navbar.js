@@ -61,7 +61,7 @@ const Navbar = () => {
                     onClick={handleCloseNavMenu}
                     className="navbar-menu-item"
                   >
-                    <Typography textAlign="center" variant="h4">
+                    <Typography textalign="left" variant="h4">
                       {page}
                     </Typography>
                   </MenuItem>
