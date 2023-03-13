@@ -6,7 +6,7 @@ a {
 .navbar,
 .toolbar {
   background-color: white !important;
-  height: 100px;
+  height: 80px;
 }
 
 .navbar-buttons-container {
@@ -39,9 +39,8 @@ a {
   text-transform: capitalize;
 }
 
-/* @media screen and (min-width: 768px) {
-
-} */
+@media screen and (min-width: 768px) {
+}
 
 @media screen and (min-width: 992px) {
   .navbar-button {
