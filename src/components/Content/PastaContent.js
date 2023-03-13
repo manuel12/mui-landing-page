@@ -28,15 +28,27 @@ const PastaContent = () => {
           <Box className="left-content" id="pasta">
             <Zoom in={textAnimation} timeout={2000}>
               <Box id="text" className="text-container pasta-animation-element">
-                <Typography variant="h3" align="center" gutterBottom>
+                <Typography variant="h3" align="left" gutterBottom>
                   Pasta like you've never had before
                 </Typography>
-                <Typography variant="h5" align="center" gutterBottom>
-                  Voluptatem sint perferendis quas eveniet. Saepe maiores sequi
-                  ipsam similique iusto iste est. Unde tempora voluptatem
-                  laborum assumenda alias nisi. Repellat laborum accusantium
-                  dolore dolor laboriosam. Quod recusandae dolorem quasi fuga
-                  alias.
+                <Typography variant="h5" align="left" gutterBottom>
+                  Our restaurant serves up pasta like you've never had before.
+                  We use only the freshest and highest-quality ingredients,
+                  including homemade pasta that's cooked to perfection.
+                  <br />
+                  <br />
+                  Our sauces are made from scratch using traditional Italian
+                  recipes and the finest ingredients, resulting in rich and
+                  flavorful sauces that perfectly complement our pasta. From
+                  spicy arrabbiata to creamy alfredo to tangy lemon butter, our
+                  sauces are anything but ordinary. Whether you're a
+                  traditionalist or an adventurous foodie, our restaurant has
+                  something for everyone.
+                  <br />
+                  <br />
+                  Come in and experience pasta like you've never had before,
+                  with bold and exciting flavors that will leave you craving
+                  more.
                 </Typography>
               </Box>
             </Zoom>
