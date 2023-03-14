@@ -16,7 +16,6 @@ const Navbar = () => {
   const pages = ["home", "pizza", "pasta", "about", "location"];
 
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -28,7 +27,7 @@ const Navbar = () => {
 
   return (
     <AppBar className="navbar">
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Toolbar className="toolbar" disableGutters>
           <Box
             sx={{
@@ -38,8 +37,8 @@ const Navbar = () => {
               },
             }}
           >
-            <IconButton size="large" onClick={handleOpenNavMenu}>
-              <MenuIcon className="hamburger-button" />
+            <IconButton size="small" onClick={handleOpenNavMenu}>
+              <MenuIcon sx={{ fontSize: 36 }} className="hamburger-button" />
             </IconButton>
             <Menu
               anchorEl={anchorElNav}
@@ -60,6 +59,7 @@ const Navbar = () => {
                     key={page}
                     onClick={handleCloseNavMenu}
                     className="navbar-menu-item"
+                    dense
                   >
                     <Typography textalign="left" variant="h4">
                       {page}
