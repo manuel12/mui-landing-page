@@ -1,6 +1,11 @@
 a {
   text-decoration: none;
+  border-bottom: 2px solid white !important;
   color: var(--font-color);
+}
+
+a:hover {
+  border-bottom: 2px solid red !important;
 }
 
 .navbar,
@@ -17,21 +22,15 @@ a {
 
 .hamburger-button {
   color: var(--main-color);
-  font-size: 60px !important;
 }
 
 .navbar-button {
   background-color: white !important;
-  border-radius: 0 !important;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
+  border: none !important;
 
-  border-bottom: var(--border-width) solid var(--main-color) !important;
   width: 150px;
   height: 70px;
   font-size: 24px !important;
-  font-weight: bold !important;
   color: var(--font-color) !important;
 }
 
