@@ -23,7 +23,7 @@ const PizzaContent = () => {
 
   return (
     <Box className="pizza-content-background" id="pizza">
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box className="content pizza-content">
           <Box className="left-content">
             <Zoom in={pizzaImageAnimation} timeout={1400}>
@@ -40,24 +40,29 @@ const PizzaContent = () => {
                   The best pizza in town
                 </Typography>
                 <Typography variant="h5" align="left" gutterBottom>
-                  Looking for the best pizza in town? Look no further than our
-                  pizzeria.
+                  Our pizzeria is home to the best pizza in town. We use only
+                  the freshest and highest-quality ingredients to make our
+                  pizzas, from our homemade dough that's crispy on the outside
+                  and chewy on the inside to our tangy tomato sauce and
+                  carefully selected cheeses.
                   <br />
                   <br />
-                  Our expert chefs use only the freshest and highest-quality
-                  ingredients to make our pizzas, ensuring that every slice is
-                  bursting with flavor.
+                  Our expert chefs take great care in making each pizza to
+                  perfection, ensuring that every slice is bursting with flavor.
+                  We offer a variety of delicious toppings, from classic
+                  pepperoni and sausage to more unique options like spinach,
+                  feta, and roasted garlic.
                   <br />
                   <br />
                   Whether you dine in or order takeout, you can always count on
                   our pizza to be hot, fresh, and absolutely delicious. Our
                   passion for pizza shines through in every bite, and we're
                   confident that once you try our pizza, you won't want to go
-                  anywhere else.
+                  anywhere else
                   <br />
                   <br />
                   Come in and taste the difference for yourself. Our pizza truly
-                  is the best in town.
+                  is the best in town, and we can't wait to share it with you.
                 </Typography>
               </Box>
             </Zoom>

@@ -23,7 +23,7 @@ const PastaContent = () => {
 
   return (
     <Box className="pasta-content-background" id="pasta">
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Box className="content pasta-content">
           <Box className="left-content">
             <Zoom in={textAnimation} timeout={2000}>
@@ -33,22 +33,26 @@ const PastaContent = () => {
                 </Typography>
                 <Typography variant="h5" align="left" gutterBottom>
                   Our restaurant serves up pasta like you've never had before.
-                  We use only the freshest and highest-quality ingredients,
-                  including homemade pasta that's cooked to perfection.
+                  We start with only the freshest and highest-quality
+                  ingredients, including homemade pasta that's cooked to
+                  perfection. Our sauces are made from scratch using traditional
+                  Italian recipes and the finest ingredients, resulting in rich
+                  and flavorful sauces that perfectly complement our pasta.
                   <br />
                   <br />
-                  Our sauces are made from scratch using traditional Italian
-                  recipes and the finest ingredients, resulting in rich and
-                  flavorful sauces that perfectly complement our pasta. From
-                  spicy arrabbiata to creamy alfredo to tangy lemon butter, our
-                  sauces are anything but ordinary. Whether you're a
-                  traditionalist or an adventurous foodie, our restaurant has
-                  something for everyone.
+                  What really sets our pasta apart is the unique and creative
+                  combinations of flavors that we offer. From spicy arrabbiata
+                  to creamy alfredo to tangy lemon butter, our sauces are
+                  anything but ordinary. We also offer a variety of fresh and
+                  seasonal ingredients, like roasted vegetables, seafood, and
+                  tender meats, to add even more depth and flavor to our dishes.
                   <br />
                   <br />
-                  Come in and experience pasta like you've never had before,
-                  with bold and exciting flavors that will leave you craving
-                  more.
+                  Whether you're a traditionalist who loves classic pasta dishes
+                  or an adventurous foodie looking to try something new, our
+                  restaurant has something for everyone. Come in and experience
+                  pasta like you've never had before, with bold and exciting
+                  flavors that will leave you craving more.
                 </Typography>
               </Box>
             </Zoom>

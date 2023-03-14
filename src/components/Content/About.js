@@ -24,7 +24,7 @@ const About = () => {
   return (
     <>
       <Box className="about-content-background" id="about">
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <Box className="content about-content">
             <Box className="left-content">
               <Zoom in={aboutImageAnimation} timeout={1400}>
@@ -36,26 +36,37 @@ const About = () => {
             </Box>
             <Box className="right-content">
               <Zoom in={textAnimation} timeout={2000}>
-                <Box id="text" className="text-container about-animation-element">
+                <Box
+                  id="text"
+                  className="text-container about-animation-element"
+                >
                   <Typography variant="h3" align="left" gutterBottom>
                     Our Story
                   </Typography>
                   <Typography variant="h5" align="left" gutterBottom>
-                    Our famous Italian pizzeria started from humble beginnings
-                    in a small town in Italy. <br />
+                    Our famous Italian pizzeria has a story that's rooted in
+                    tradition, passion, and hard work. It all began in a small
+                    town in Italy, where our founder, a passionate pizza maker,
+                    started making pizzas in a humble kitchen with just a few
+                    ingredients. <br />
                     <br />
-                    With a passion for pizza and a dedication to using only the
-                    finest ingredients, we quickly gained a loyal following.
-                    Word spread about our delicious pizzas, and before long, we
-                    were the talk of the town. As our reputation grew, we
-                    expanded to new locations and perfected our craft, always
-                    staying true to our roots.
+                    As word of mouth spread about the delicious pizzas, more and
+                    more people started coming to try them. Our founder's
+                    commitment to quality and use of only the finest ingredients
+                    became the hallmark of our pizzeria's success.
                     <br />
                     <br />
-                    Today, we are known around the world for our authentic
-                    Italian pizzas and commitment to quality. Our story is one
-                    of passion, hard work, and a love for great pizza that
-                    continues to this day.
+                    Over the years, we expanded our reach and opened up new
+                    locations, always staying true to our roots and traditional
+                    methods of pizza making. Today, we're known around the world
+                    for our authentic Italian pizzas, cooked to perfection in
+                    wood-fired ovens and served hot and fresh.
+                    <br />
+                    <br />
+                    Our story is one of hard work, dedication, and a love for
+                    great pizza that continues to drive us forward. We invite
+                    you to come and experience our story for yourself with a
+                    slice of our delicious pizza.
                   </Typography>
                 </Box>
               </Zoom>
