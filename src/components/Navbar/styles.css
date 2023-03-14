@@ -5,7 +5,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid red !important;
+  border-bottom: 2px solid var(--main-color) !important;
 }
 
 .navbar,
