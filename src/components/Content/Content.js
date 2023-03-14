@@ -62,7 +62,7 @@ const Content = () => {
                       className="animation-element"
                       gutterBottom
                     >
-                      Mario's Pizzeria
+                      Napoli's Pizzeria
                     </Typography>
                   </Zoom>
                   <Zoom in={locationAnimation} timeout={2000}>
@@ -73,7 +73,7 @@ const Content = () => {
                       align="left"
                       gutterBottom
                     >
-                      ​254 W 27ST ST, NEW YORK, NY 10011
+                      Napoli Centro, Via Miroballo Al Pendino,<br/>30, 80111 Napoli, Italy
                     </Typography>
                   </Zoom>
                 </Box>
