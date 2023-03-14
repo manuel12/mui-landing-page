@@ -37,14 +37,14 @@ const Content = () => {
   return (
     <>
       <Box className="home-content-background" id="home">
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <Box className="content home-content">
             <Box className="left-content">
               <Container>
                 <Box className="text-container">
                   <Zoom in={welcomeAnimation} timeout={2000}>
                     <Typography
-                      variant="h5"
+                      variant="h4"
                       align="left"
                       id="welcome"
                       className="animation-element"
@@ -69,7 +69,7 @@ const Content = () => {
                     <Typography
                       id="location-text"
                       className="text-location animation-element"
-                      variant="h4"
+                      variant="h5"
                       align="left"
                       gutterBottom
                     >
@@ -115,14 +115,12 @@ const Content = () => {
               </Container>
             </Box>
             <Box className="right-content">
-              <Container>
-                <Zoom in={imageAnimation} timeout={1400}>
-                  <Box
-                    className="image-container animation-element"
-                    id="home-image"
-                  ></Box>
-                </Zoom>
-              </Container>
+              <Zoom in={imageAnimation} timeout={1400}>
+                <Box
+                  className="image-container animation-element"
+                  id="home-image"
+                ></Box>
+              </Zoom>
             </Box>
           </Box>
         </Container>
