@@ -51,7 +51,7 @@ const Location = () => {
               <iframe
                 id="location-iframe"
                 className="map location-animation-element"
-                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d96579.32826179624!2d14.18973387930306!3d40.84764021976882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x133b084126d00001%3A0x22f03cedb6fcc79b!2sVia%20Miroballo%20Al%20Pendino%2C%2029%2C%2080138%20Napoli%20NA%2C%20Italy!3m2!1d40.8476614!2d14.2597738!5e0!3m2!1sen!2spl!4v1678652924410!5m2!1sen!2spl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.1054619685465!2d14.2599663!3d40.8476083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b084127547a0f%3A0xb22f03e0b7d553f2!2sVia%20Miroballo%20Al%20Pendino%2C%2030%2C%2080138%20Napoli%20NA%2C%20Italy!5e0!3m2!1sen!2spl!4v1678801894857!5m2!1sen!2spl"
                 loading="lazy"
               ></iframe>
             </Zoom>
