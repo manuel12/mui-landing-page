@@ -73,7 +73,7 @@ const Content = () => {
                       align="left"
                       gutterBottom
                     >
-                      Napoli Centro, Via Miroballo Al Pendino,<br/>30, 80111 Napoli, Italy
+                      Napoli Centro, Via Miroballo Al Pendino 30, 80111<br/>Napoli, Italy
                     </Typography>
                   </Zoom>
                 </Box>
