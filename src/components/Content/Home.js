@@ -9,7 +9,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { createObserver, observeElements } from "../../utils";
 import "./styles.css";
 
-const Content = () => {
+const Home = () => {
   const [nameAnimation, setNameAnimation] = useState(false);
   const [locationAnimation, setLocationAnimation] = useState(false);
   const [welcomeAnimation, setWelcomeAnimation] = useState(false);
@@ -73,7 +73,9 @@ const Content = () => {
                       align="left"
                       gutterBottom
                     >
-                      Napoli Centro, Via Miroballo Al Pendino 30, 80111<br/>Napoli, Italy
+                      Napoli Centro, Via Miroballo Al Pendino 30, 80111
+                      <br />
+                      Napoli, Italy
                     </Typography>
                   </Zoom>
                 </Box>
@@ -116,10 +118,19 @@ const Content = () => {
             </Box>
             <Box className="right-content">
               <Zoom in={imageAnimation} timeout={1400}>
-                <Box
-                  className="image-container animation-element"
-                  id="home-image"
-                ></Box>
+                <div>
+                  <Box
+                    className="image-container animation-element"
+                    id="home-image"
+                  ></Box>
+                  <p className="image-credit">
+                    Image source: La Felicità - crédit photo{" "}
+                    <a target="_blank" href="https://www.sliceofpai.com/about">
+                      Joann Pai
+                    </a>
+                    .
+                  </p>
+                </div>
               </Zoom>
             </Box>
           </Box>
@@ -129,4 +140,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Home;

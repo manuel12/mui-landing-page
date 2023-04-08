@@ -6,7 +6,7 @@ import { createObserver, observeElements } from "../../utils";
 import "./styles.css";
 import "./pizza-styles.css";
 
-const PizzaContent = () => {
+const Pizza = () => {
   const [pizzaImageAnimation, setPizzaImageAnimation] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);
 
@@ -27,10 +27,19 @@ const PizzaContent = () => {
         <Box className="content pizza-content">
           <Box className="left-content">
             <Zoom in={pizzaImageAnimation} timeout={1400}>
-              <Box
-                id="pizza-image"
-                className="image-container pizza-image-container pizza-animation-element"
-              ></Box>
+              <div>
+                <Box
+                  id="pizza-image"
+                  className="image-container pizza-image-container pizza-animation-element"
+                ></Box>
+                <p className="image-credit white">
+                  Image source:{" "}
+                  <a target="_blank" href="https://www.gettyimages.com/">
+                    Getty Images
+                  </a>
+                  .
+                </p>
+              </div>
             </Zoom>
           </Box>
           <Box className="right-content">
@@ -73,4 +82,4 @@ const PizzaContent = () => {
   );
 };
 
-export default PizzaContent;
+export default Pizza;

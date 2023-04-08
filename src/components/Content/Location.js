@@ -56,7 +56,15 @@ const Location = () => {
               ></iframe>
             </Zoom>
           </Box>
+
         </Box>
+        <p className="image-credit white">
+            Image source:{" "}
+            <a target="_blank" href="https://heyhannover.de/">
+              Hey Hannover
+            </a>
+            .
+          </p>
       </Container>
     </Box>
   );

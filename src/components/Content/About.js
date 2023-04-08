@@ -28,10 +28,22 @@ const About = () => {
           <Box className="content about-content">
             <Box className="left-content">
               <Zoom in={aboutImageAnimation} timeout={1400}>
-                <Box
-                  id="about-image"
-                  className="image-container about-image-container about-animation-element"
-                ></Box>
+                <div>
+                  <Box
+                    id="about-image"
+                    className="image-container about-image-container about-animation-element"
+                  ></Box>
+                  <p className="image-credit white">
+                    Image source:{" "}
+                    <a
+                      target="_blank"
+                      href="https://sansonemarketgardencity.com/"
+                    >
+                      Sansone Market
+                    </a>
+                    .
+                  </p>
+                </div>
               </Zoom>
             </Box>
             <Box className="right-content">

@@ -6,7 +6,7 @@ import { createObserver, observeElements } from "../../utils";
 import "./styles.css";
 import "./pasta-styles.css";
 
-const PastaContent = () => {
+const Pasta = () => {
   const [pastaImageAnimation, setPastaImageAnimation] = useState(false);
   const [textAnimation, setTextAnimation] = useState(false);
 
@@ -59,10 +59,17 @@ const PastaContent = () => {
           </Box>
           <Box className="right-content pasta-right-content">
             <Zoom in={pastaImageAnimation} timeout={1400}>
-              <Box
-                id="pasta-image"
-                className="image-container pasta-image-container pasta-animation-element"
-              ></Box>
+              <div>
+                <Box
+                  id="pasta-image"
+                  className="image-container pasta-image-container pasta-animation-element"
+                ></Box>
+                <p className="image-credit">
+                  Image source:{" "}
+                  <a href="https://rainbowplantlife.com/">Rainbow Plant Life</a>
+                  .
+                </p>
+              </div>
             </Zoom>
           </Box>
         </Box>
@@ -71,4 +78,4 @@ const PastaContent = () => {
   );
 };
 
-export default PastaContent;
+export default Pasta;
