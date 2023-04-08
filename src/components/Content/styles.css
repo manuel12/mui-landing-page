@@ -98,13 +98,6 @@ a {
   min-height: 400px;
 }
 
-.image-credit {
-  position: relative;
-  top: -15px;
-  font-style: italic;
-  color: grey;
-}
-
 @media screen and (min-width: 600px) {
   .action-buttons-container {
     margin: 0 auto;
