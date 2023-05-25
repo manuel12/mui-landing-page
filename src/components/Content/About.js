@@ -23,39 +23,39 @@ const About = () => {
 
   return (
     <>
-      <Box className="about-content-background" id="about">
-        <Container maxWidth="lg">
-          <Box className="content about-content">
-            <Box className="left-content">
+      <Box className='about-content-background' id='about'>
+        <Container maxWidth='lg'>
+          <Box className='content about-content'>
+            <Box className='left-content'>
               <Zoom in={aboutImageAnimation} timeout={1400}>
                 <div>
                   <Box
-                    id="about-image"
-                    className="image-container about-image-container about-animation-element"
+                    id='about-image'
+                    className='image-container about-image-container about-animation-element'
                   ></Box>
-                  <p className="image-credit white">
+                  <p className='image-credit white'>
                     Image source:{" "}
                     <a
-                      target="_blank"
-                      href="https://sansonemarketgardencity.com/"
+                      target='_blank'
+                      href='http://www.francescolastrucci.com/'
                     >
-                      Sansone Market
+                      Francesco Lastrucci
                     </a>
                     .
                   </p>
                 </div>
               </Zoom>
             </Box>
-            <Box className="right-content">
+            <Box className='right-content'>
               <Zoom in={textAnimation} timeout={2000}>
                 <Box
-                  id="text"
-                  className="text-container about-animation-element"
+                  id='text'
+                  className='text-container about-animation-element'
                 >
-                  <Typography variant="h3" align="left" gutterBottom>
+                  <Typography variant='h3' align='left' gutterBottom>
                     Our Story
                   </Typography>
-                  <Typography variant="h5" align="left" gutterBottom>
+                  <Typography variant='h5' align='left' gutterBottom>
                     Our famous Italian pizzeria has a story that's rooted in
                     tradition, passion, and hard work. It all began in a small
                     town in Italy, where our founder, a passionate pizza maker,
