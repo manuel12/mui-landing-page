@@ -12,9 +12,6 @@ a {
   padding-bottom: var(--spacing-12);
 }
 
-.home-content {
-}
-
 .left-content,
 .right-content {
   max-height: 900px;
@@ -23,9 +20,6 @@ a {
 
 .left-content {
   padding-bottom: var(--spacing-6) !important;
-}
-
-.right-content {
 }
 
 .text-container {
@@ -141,9 +135,6 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-  .home-content-background {
-  }
-
   .content {
     display: flex;
   }
@@ -172,9 +163,6 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .home-content-background {
-  }
-
   .action-buttons-container {
     display: flex;
   }
