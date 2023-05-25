@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# MUI Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A landing page for an italian pizzeria made with Material UI.
 
-## Available Scripts
+Live [demo](https://manuel12.github.io/mui-landing-page/).
 
-In the project directory, you can run:
+## Sections
 
-### `npm start`
+### Home:
+#### Desktop
+  <img src="https://user-images.githubusercontent.com/4129325/230984164-8bcdccba-f995-4d89-b308-a6a0f59b32ea.png" title="Home Page Desktop" alt="MUI Landing Page Desktop" width="650" height="357" style="display: inline"/>
+  
+#### Mobile
+  <img src="https://user-images.githubusercontent.com/4129325/230983671-033238e0-22b7-4436-ae56-c7c34d0e3e43.png" title="MUI Landing Page Mobile" alt="MUI Landing Page Mobile" width="165" height="357"/>
+  
+### Pizza:
+#### Desktop
+  <img src="https://user-images.githubusercontent.com/4129325/230985357-ab7ed986-e283-4cb8-a0ed-b9d59118d81e.png" title="Pizza Page Desktop" alt="MUI Landing Page Desktop" width="650" height="357" style="display: inline"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Mobile
+  <img src="https://user-images.githubusercontent.com/4129325/230989544-1b21d65d-fd84-4ae4-8ecd-e6252500f3e1.png" title="Pizza Page Mobile" alt="MUI Landing Page Desktop" width="165" height="357" style="display: inline"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Pasta:
+#### Desktop
+  <img src="https://user-images.githubusercontent.com/4129325/230985950-d3a2b4ad-e3c9-417a-a6e6-c684f10ac754.png" title="Pasta Page Desktop" alt="MUI Landing Page Desktop" width="650" height="357" style="display: inline"/>
 
-### `npm test`
+#### Mobile
+  <img src="https://user-images.githubusercontent.com/4129325/230989821-73e79167-dcf2-4377-92cd-9ef314f6fe6a.png" title="Pasta Page Mobile" alt="MUI Landing Page Desktop" width="165" height="357" style="display: inline"/>
+  
+### About:
+#### Desktop
+  <img src="https://user-images.githubusercontent.com/4129325/230986275-52ea01df-1d6e-43d8-8d78-f9fc30fb976f.png" title="About Page Desktop" alt="MUI Landing Page Desktop" width="650" height="357" style="display: inline"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Mobile
+  <img src="https://user-images.githubusercontent.com/4129325/230990154-af9350fa-9e16-4e16-8567-b50e8ff35f78.png" title="About Page Mobile" alt="MUI Landing Page Desktop" width="165" height="357" style="display: inline"/>
+  
+### Location:
+#### Desktop
+  <img src="https://user-images.githubusercontent.com/4129325/230986750-2a203e1c-d7b7-467d-b445-f3527a7bad37.png" title="Location Page Desktop" alt="MUI Landing Page Desktop" width="650" height="357" style="display: inline"/>
 
-### `npm run build`
+#### Mobile
+  <img src="https://user-images.githubusercontent.com/4129325/230990430-7f704674-0e7d-4947-96c2-8c0cf5ba30b4.png" title="Location Page Desktop" alt="MUI Landing Page Desktop" width="165" height="357" style="display: inline"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
