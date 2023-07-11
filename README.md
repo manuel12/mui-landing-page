@@ -1,6 +1,8 @@
 ![MUI Landing Page](hero.png)
 
-A landing page for an italian pizzeria made with Material UI.
+An example landing page for an italian pizzeria made with Material UI.
+
+There is no functionality on the page (except for scrolling when clicking on the navbar). This app is purely to showcase my Material UI and landing page creation skills.
 
 Live [demo](https://manuel12.github.io/mui-landing-page/).
 
